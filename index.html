@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Tiara</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0e27;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1c1f3b;
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Bintang-bintang latar belakang */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/4zz6K5r.png') repeat;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        section {
+            padding: 40px 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            min-height: 100vh;
+            background-color: rgba(10, 14, 39, 0.8);
+            border-bottom: 2px solid #1c1f3b;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ffdf6b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .heart {
+            font-size: 80px;
+            color: #ffdf6b;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #1c1f3b;
+            color: white;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Media query untuk perangkat mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            header {
+                font-size: 28px;
+            }
+        }
+
+        /* Menambahkan animasi scrolling lembut */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animasi bintang berkedip */
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .star {
+            position: absolute;
+            background-color: #fff;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        /* JavaScript Generated Stars */
+        .star:nth-child(1) { top: 20%; left: 30%; animation-delay: -1s; }
+        .star:nth-child(2) { top: 40%; left: 70%; animation-delay: -2s; }
+        .star:nth-child(3) { top: 60%; left: 50%; animation-delay: -3s; }
+        .star:nth-child(4) { top: 80%; left: 20%; animation-delay: -4s; }
+        .star:nth-child(5) { top: 90%; left: 60%; animation-delay: -5s; }
+    </style>
+</head>
+<body>
+
+    <header>
+        Untuk Tiara
+    </header>
+
+    <!-- Bintang-bintang berkedip -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+
+    <!-- Bagian 1 -->
+    <section>
+        <h1>Kamu adalah Bintangku</h1>
+        <p>
+            Seperti bintang di langit, kamu selalu menyinari hari-hariku. Aku sangat beruntung memiliki kamu di hidupku.
+        </p>
+
+        <div class="image-container">
+            <img src="https://via.placeholder.com/350" alt="Foto Kenangan Bersama">
+        </div>
+
+        <p>
+            Setiap kali aku melihat ke langit malam, aku selalu memikirkanmu. Kamu adalah terang dalam gelapku.
+        </p>
+
+        <div class="heart">✨</div>
+    </section>
+
+    <!-- Bagian 2 -->
+    <section style="background-color: #111330;">
+        <h1>Momen Kita</h1>
+        <p>
+            Setiap momen denganmu seperti perjalanan di antara bintang-bintang. Aku tidak sabar untuk menciptakan lebih banyak kenangan bersama.
+        </p>
+
+        <div class="image-container">
+            <img src="https://via.placeholder.com/350" alt="Foto Kenangan Indah">
+        </div>
+
+        <p>
+            Kita seperti konstelasi yang selalu terhubung, meski jarak dan waktu memisahkan kita.
+        </p>
+    </section>
+
+    <!-- Bagian 3 -->
+    <section style="background-color: #14182e;">
+        <h1>Selamanya Bersama</h1>
+        <p>
+            Seperti bintang yang selalu bersinar di malam hari, cinta kita akan terus tumbuh dan bersinar selamanya.
+        </p>
+
+        <div class="image-container">
+            <img src="https://via.placeholder.com/350" alt="Masa Depan Bersama">
+        </div>
+
+        <div class="heart">💫</div>
+    </section>
+
+    <footer>
+        Dibuat dengan cinta oleh [Nama Kamu]
+    </footer>
+
+    <script>
+        // JavaScript untuk menambahkan animasi ketika elemen muncul di layar saat digulir
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
